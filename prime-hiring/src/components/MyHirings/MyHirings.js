@@ -34,7 +34,7 @@ const MyHirings = () => {
             {recordList && recordList.map((record, index) => {
                 return (
                 <React.Fragment key={index}>
-                {index != 0 &&
+                {index !== 0 &&
                     <Divider sx={{maxWidth: '600px'}} />
                 }
                 <RecordCard record={record}/>

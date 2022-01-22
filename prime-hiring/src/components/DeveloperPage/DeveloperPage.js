@@ -65,7 +65,7 @@ const DeveloperPage = () => {
         })
         .catch(err => console.log(err))
         .finally(() => setProgress(false))
-    },[reloadGetDeveloper]);
+    },[reloadGetDeveloper, id]);
 
     return ( 
     <Box sx={{marginTop: '1%'}}>

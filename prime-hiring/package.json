@@ -30,6 +30,9 @@
     "test": "react-scripts test"
   },
   "eslintConfig": {
+    "rules": {
+      "react-hooks/exhaustive-deps": "off"
+    },
     "extends": [
       "react-app",
       "react-app/jest"

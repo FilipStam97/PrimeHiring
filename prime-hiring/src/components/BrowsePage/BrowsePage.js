@@ -53,7 +53,7 @@ const BrowsePage = () => {
 
     const removeDeveloper = (developerID) => {
         if(multipleDevelopersList.length > 0)
-            setMultipleDevelopersList([...multipleDevelopersList.filter(developer => developer.id != developerID)]);
+            setMultipleDevelopersList([...multipleDevelopersList.filter(developer => developer.id !== developerID)]);
     }
 
     return ( 
@@ -79,7 +79,7 @@ const BrowsePage = () => {
             {developerList && developerList.map((dev, index) => {
                 return (
                 <React.Fragment key={index}>
-                {index != 0 &&
+                {index !== 0 &&
                     <Divider sx={{maxWidth: '800px'}} />
                 }
                 <DeveloperCard addDeveloper={(developer) => addDeveloper(developer)} removeDeveloper={(id) => removeDeveloper(id)} switchChecked = {switchChecked} key={dev.name} developer={dev}/> 

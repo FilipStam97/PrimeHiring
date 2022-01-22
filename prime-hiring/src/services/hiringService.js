@@ -43,7 +43,7 @@ export async function getRecordsOfSelectedDevelopers(dveloperArray) {
 
 export async function createHiringRecord(data) {
   try {
-    const res = await axios.post(`${SERVER_URL}/records`, data, {
+    await axios.post(`${SERVER_URL}/records`, data, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -58,7 +58,7 @@ export async function createHiringRecord(data) {
 export async function createMultipleHiringRecords(dataArray) {
     try {
         dataArray.forEach(async (record) => {
-            const res = await axios.post(`${SERVER_URL}/records`, record, {
+            await axios.post(`${SERVER_URL}/records`, record, {
               headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",

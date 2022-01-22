@@ -29,7 +29,7 @@ export async function getDeveloper(id) {
 
 export async function deleteDeveloper(id) {
     try {
-   const res = await axios.delete(`${SERVER_URL}/developers/${id}`);
+    await axios.delete(`${SERVER_URL}/developers/${id}`);
    return Promise.resolve("Succes");
     }
     catch(err) {
@@ -41,7 +41,7 @@ export async function deleteDeveloper(id) {
 
 export async function createDeveloper(data) {
     try {
-   const res = await axios.post(`${SERVER_URL}/developers`, data, 
+    await axios.post(`${SERVER_URL}/developers`, data, 
    {
     headers:  { 
       'Accept': 'application/json',
@@ -58,7 +58,7 @@ export async function createDeveloper(data) {
 
 export async function updateDeveloper(id, data) {
     try {
-   const res = await axios.put(`${SERVER_URL}/developers/${id}`, data, 
+    await axios.put(`${SERVER_URL}/developers/${id}`, data, 
    {
     headers:  { 
       'Accept': 'application/json',

@@ -81,49 +81,49 @@ const CreateEditDeveloperModal = (props) => {
   const [error, setError] = useState(initialErrorState);
 
   const validData = () => {
-      if(data.name.length == 0)
+      if(data.name.length === 0)
         {
             setError({errorCode: 1 , errorMessage: "Name is a required field!"});
             return false;
         }
         else
-        if(data.email.length == 0 || !data.email.includes("@") || data.email.includes(" "))
+        if(data.email.length === 0 || !data.email.includes("@") || data.email.includes(" "))
         {
             setError({errorCode: 2 , errorMessage: "A valid email is required!"});
             return false;
         }
         else
-        if(data.phoneNumber.length == 0 || !/^\d+$/.test(data.phoneNumber))
+        if(data.phoneNumber.length === 0 || !/^\d+$/.test(data.phoneNumber))
         {
             setError({errorCode: 3 , errorMessage: "A valid phone number is required!"});
             return false;
         }
         else
-        if(data.location.length == 0)
+        if(data.location.length === 0)
         {
             setError({errorCode: 4 , errorMessage: "Location is required!"});
             return false;
         }
         else
-        if(data.pricePerHour.length == 0)
+        if(data.pricePerHour.length === 0)
         {
             setError({errorCode: 5 , errorMessage: "Price per hour required!"});
             return false;
         }
         else
-        if(data.technology.length == 0)
+        if(data.technology.length === 0)
         {
             setError({errorCode: 6 , errorMessage: "Technology is a required field!"});
             return false;
         }
         else
-        if(data.yearsOfExperience.length == 0)
+        if(data.yearsOfExperience.length === 0)
         {
             setError({errorCode: 7 , errorMessage: "Years of experience is a required field!"});
             return false;
         }
         else
-        if(data.nativeLanguage.length == 0)
+        if(data.nativeLanguage.length === 0)
         {
             setError({errorCode: 8 , errorMessage: "Native Language is a required field!"});
             return false;
@@ -190,7 +190,7 @@ const CreateEditDeveloperModal = (props) => {
           <Box sx={styles.formBoxStyle}>
             <Box sx={styles.dualInputBoxWrapper}>
               <TextField
-                error = {error.errorCode == 1 ? true : false}
+                error = {error.errorCode === 1 ? true : false}
                 sx={styles.dualInputBoxInputStyle}
                 onChange={(e) => setData({ ...data, name: e.target.value })}
                 value={data.name}
@@ -199,7 +199,7 @@ const CreateEditDeveloperModal = (props) => {
                 variant="standard"
               />
               <TextField
-                error = {error.errorCode == 2 ? true : false}
+                error = {error.errorCode === 2 ? true : false}
                 sx={styles.dualInputBoxInputStyle}
                 onChange={(e) => setData({ ...data, email: e.target.value })}
                 value={data.email}
@@ -210,7 +210,7 @@ const CreateEditDeveloperModal = (props) => {
             </Box>
             <Box sx={styles.dualInputBoxWrapper}>
               <TextField
-                error = {error.errorCode == 3 ? true : false}
+                error = {error.errorCode === 3 ? true : false}
                 sx={styles.dualInputBoxInputStyle}
                 onChange={(e) =>
                   setData({ ...data, phoneNumber: e.target.value })
@@ -222,7 +222,7 @@ const CreateEditDeveloperModal = (props) => {
               />
               <TextField
                 sx={styles.dualInputBoxInputStyle}
-                error = {error.errorCode == 4 ? true : false}
+                error = {error.errorCode === 4 ? true : false}
                 onChange={(e) => setData({ ...data, location: e.target.value })}
                 value={data.location}
                 required
@@ -241,7 +241,7 @@ const CreateEditDeveloperModal = (props) => {
                 variant="standard"
               />
               <TextField
-                error = {error.errorCode == 5 ? true : false}
+                error = {error.errorCode === 5 ? true : false}
                 sx={styles.dualInputBoxInputStyle}
                 onChange={(e) =>
                   setData({ ...data, pricePerHour: e.target.value })
@@ -255,7 +255,7 @@ const CreateEditDeveloperModal = (props) => {
             </Box>
             <Box sx={styles.dualInputBoxWrapper}>
               <FormControl
-                error = {error.errorCode == 6 ? true : false}
+                error = {error.errorCode === 6 ? true : false}
                 required
                 variant="standard"
                 sx={{ m: 1, minWidth: 120 }}
@@ -294,7 +294,7 @@ const CreateEditDeveloperModal = (props) => {
             />
             <Box sx={styles.dualInputBoxWrapper}>
               <TextField
-                error = {error.errorCode == 7 ? true : false}
+                error = {error.errorCode === 7 ? true : false}
                 sx={styles.dualInputBoxInputStyle}
                 onChange={(e) =>
                   setData({ ...data, yearsOfExperience: e.target.value })
@@ -315,7 +315,7 @@ const CreateEditDeveloperModal = (props) => {
             </Box>
             <Box sx={styles.dualInputBoxWrapper}>
               <FormControl
-                error = {error.errorCode == 8 ? true : false}
+                error = {error.errorCode === 8 ? true : false}
                 required
                 variant="standard"
                 sx={{ m: 1, minWidth: 120 }}

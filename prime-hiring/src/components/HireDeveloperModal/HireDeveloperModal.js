@@ -2,8 +2,6 @@
 import  React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Tooltip, Backdrop, Box, Modal, Fade, Button, Typography , TextField} from '@mui/material';
-import { deleteDeveloper } from '../../services/developersService';
-import { useHistory } from 'react-router-dom';
 import DateAdapter from '@mui/lab/AdapterMoment';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DesktopDatePicker from '@mui/lab/DesktopDatePicker';
@@ -101,8 +99,8 @@ const HireDeveloperModal = (props) => {
        
         if(!overlapTest(moment(newRecordsArray[0].startDate).toDate(),moment(newRecordsArray[0].endDate).toDate()))
         {
-          createMultipleHiringRecords(newRecordsArray).
-          then(res => {
+          createMultipleHiringRecords(newRecordsArray)
+          .then(res => {
               console.log(res);
               resetState();
               setReloadGetRecords(!reloadGetRecords);
@@ -128,8 +126,8 @@ const HireDeveloperModal = (props) => {
      
       if(!overlapTest(moment(newRecord.startDate).toDate(),moment(newRecord.endDate).toDate()))
       {
-          createHiringRecord(newRecord).
-          then(res => {
+          createHiringRecord(newRecord)
+          .then(res => {
               console.log(res);
               resetState();
               setReloadGetRecords(!reloadGetRecords);

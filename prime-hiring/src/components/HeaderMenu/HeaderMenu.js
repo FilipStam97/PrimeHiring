@@ -13,6 +13,7 @@ const styles = {
         paddingLeft: '16.5%'
     },
     logoStyle: {
+      flexGrow: 1,
       "&:hover":{
         cursor: 'pointer'
       }
@@ -26,7 +27,7 @@ const HeaderMenu = (props) => {
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" sx={{paddingRight: '15%', paddingLeft: '15%'}}>
           <Toolbar >
-            <Typography sx={styles.logoStyle} onClick ={() => history.push('/')} variant="h4" component="div" sx={{ flexGrow: 1 }}>
+            <Typography sx={styles.logoStyle} onClick ={() => history.push('/')} variant="h4" component="div" >
               PrimeHiring
             </Typography>
             <Button  sx={styles.navLinkStyle} onClick ={() => history.push('/')} color="inherit">My Hirings</Button>
