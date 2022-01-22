@@ -1,0 +1,105 @@
+{
+  "developers": [
+    {
+      "name": "David Danilov",
+      "email": "davidd@gmail.com",
+      "phoneNumber": "444 555",
+      "location": "Nis",
+      "profilePic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "pricePerHour": 5.6,
+      "technology": "Javascript",
+      "description": "Young JS developer, ready to learn!!!!",
+      "yearsOfExperience": 2,
+      "nativeLanguage": "Bulgarian",
+      "linkedIn": "https://www.linkedin.com/company/prime-software-serbia/?originalSubdomain=rs",
+      "id": 1
+    },
+    {
+      "name": "Anna Johnson",
+      "email": "janna@gmail.com",
+      "phoneNumber": "888 999",
+      "location": "London",
+      "profilePic": "https://us.123rf.com/450wm/fizkes/fizkes2007/fizkes200701872/152319944-close-up-headshot-portrait-of-smiling-vietnamese-young-woman-look-at-camera-talk-on-video-call-profi.jpg?ver=6",
+      "pricePerHour": 9,
+      "technology": "Flutter",
+      "description": "Experienced Flutter developer, passionate about mobile apps.",
+      "yearsOfExperience": 5,
+      "nativeLanguage": "English",
+      "linkedIn": "https://www.linkedin.com/company/prime-software-serbia/?originalSubdomain=rs",
+      "id": 2
+    },
+    {
+      "name": "Branko Maric",
+      "email": "maricbb@gmail.com",
+      "phoneNumber": "111 222",
+      "location": "Belgrade",
+      "profilePic": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+      "pricePerHour": 7.6,
+      "technology": ".NET",
+      "description": ".NET developer",
+      "yearsOfExperience": 3,
+      "nativeLanguage": "Serbian",
+      "linkedIn": "https://www.linkedin.com/company/prime-software-serbia/?originalSubdomain=rs",
+      "id": 3
+    }
+  ],
+  "records": [
+    {
+      "id": "94e312ef-e8a8-47c2-8055-a8aed2aa190e",
+      "developer": {
+        "name": "David Danilov",
+        "email": "davidd@gmail.com",
+        "phoneNumber": "444 555",
+        "location": "Nis",
+        "profilePic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "pricePerHour": 5.6,
+        "technology": "Javascript",
+        "description": "Young JS developer, ready to learn!!!!",
+        "yearsOfExperience": 2,
+        "nativeLanguage": "Bulgarian",
+        "linkedIn": "https://www.linkedin.com/company/prime-software-serbia/?originalSubdomain=rs",
+        "id": 1
+      },
+      "startDate": "2022-Jan-23 00:00:00",
+      "endDate": "2022-Jan-24 00:00:00"
+    },
+    {
+      "id": "754c8863-1c53-45cb-88aa-ea953aa3d479",
+      "developer": {
+        "name": "Anna Johnson",
+        "email": "janna@gmail.com",
+        "phoneNumber": "888 999",
+        "location": "London",
+        "profilePic": "https://us.123rf.com/450wm/fizkes/fizkes2007/fizkes200701872/152319944-close-up-headshot-portrait-of-smiling-vietnamese-young-woman-look-at-camera-talk-on-video-call-profi.jpg?ver=6",
+        "pricePerHour": 9,
+        "technology": "Flutter",
+        "description": "Experienced Flutter developer, passionate about mobile apps.",
+        "yearsOfExperience": 5,
+        "nativeLanguage": "English",
+        "linkedIn": "https://www.linkedin.com/company/prime-software-serbia/?originalSubdomain=rs",
+        "id": 2
+      },
+      "startDate": "2022-Feb-2 00:00:00",
+      "endDate": "2022-Feb-4 00:00:00"
+    },
+    {
+      "id": "e6d60717-b2be-4787-9e2c-c8f86a67ba73",
+      "developer": {
+        "name": "Branko Maric",
+        "email": "maricbb@gmail.com",
+        "phoneNumber": "111 222",
+        "location": "Belgrade",
+        "profilePic": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+        "pricePerHour": 7.6,
+        "technology": ".NET",
+        "description": ".NET developer",
+        "yearsOfExperience": 3,
+        "nativeLanguage": "Serbian",
+        "linkedIn": "https://www.linkedin.com/company/prime-software-serbia/?originalSubdomain=rs",
+        "id": 3
+      },
+      "startDate": "2022-Feb-2 00:00:00",
+      "endDate": "2022-Feb-4 00:00:00"
+    }
+  ]
+}
